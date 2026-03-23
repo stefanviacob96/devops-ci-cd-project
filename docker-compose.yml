@@ -1,0 +1,7 @@
+services:
+  app:
+    image: ghcr.io/stefanviacob96/devops-ci-app:latest
+    container_name: devops-ci-app
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
